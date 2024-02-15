@@ -1,19 +1,9 @@
 import Universe from "./Universe";
 import {useState} from 'react';
-import { useLoader} from "@react-three/fiber";
-import {GLTFLoader} from 'three/addons/loaders/GLTFLoader';
 import './assets/style.css'
 function App() {
     const [componentState, setComponentState] = useState(false)
-    const sunGltf = useLoader(GLTFLoader, '/solar_system/sun/scene.gltf');
-    const mercuryGltf = useLoader(GLTFLoader, '/solar_system/mercury/scene.gltf');
-    const venusGltf = useLoader(GLTFLoader, '/solar_system/new_venus__4/scene.gltf');
-    const earthGltf = useLoader(GLTFLoader, '/solar_system/earth/scene.gltf');
-    const marsGltf = useLoader(GLTFLoader, '/solar_system/mars/scene.gltf');
-    const jupiterGltf = useLoader(GLTFLoader, '/solar_system/jupiter/scene.gltf');
-    const saturnGltf = useLoader(GLTFLoader, '/solar_system/saturn/scene.gltf');
-    const uranusGltf = useLoader(GLTFLoader, '/solar_system/uranus_new_1/scene.gltf');
-    const neptuneGltf = useLoader(GLTFLoader, '/solar_system/neptune/scene.gltf');
+
     function frontPage(){
       return(
         <div>
@@ -33,7 +23,7 @@ function App() {
 
     return (
       <>
-        {componentState? <Universe neptuneGltf = {neptuneGltf} uranusGltf ={uranusGltf}saturnGltf={saturnGltf} marsGltf = {marsGltf} jupiterGltf = {jupiterGltf} sunGltf={sunGltf} mercuryGltf={mercuryGltf} venusGltf={venusGltf} earthGltf={earthGltf}/>: frontPage()}
+        {componentState? <Universe/>: frontPage()}
       </>
   );
 }

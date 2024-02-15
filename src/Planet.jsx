@@ -10,7 +10,7 @@ const scale = 5/au;
 
 function Planet(prop){
     const cameraRef = useRef();
-    const earthMoonGltf = useLoader(GLTFLoader, '/solar_system/earth_moon/scene.gltf');
+    //const earthMoonGltf = useLoader(GLTFLoader, '/solar_system/earth_moon/scene.gltf');
     let [clicked, setClicked] = useState(false);
     const [q,w,e] = prop.coordinates
     const clockRef = useRef(new THREE.Clock())
@@ -42,7 +42,6 @@ function Planet(prop){
             <mesh>
                 <mesh position={prop.coordinates} ref = {cameraRef}onClick={() => setClicked(!clicked) } >
                     <primitive  object={prop.gltf.scene} scale = {prop.scale} children-0-castShadow />
-                    <Moon gltf = {earthMoonGltf} scale = {0.05} size = {[0.06,2,2]} coordinates = {[Math.round(0.1 * au * scale),0,0]} color = "white" rotation = {0.001}/>
                 </mesh>
             </mesh>
         )
