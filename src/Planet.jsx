@@ -1,16 +1,10 @@
 import {useState, useRef} from "react";
-import { useFrame, useLoader } from "@react-three/fiber";
-import {GLTFLoader} from 'three/addons/loaders/GLTFLoader';
-import {Text} from "@react-three/drei";
+import { useFrame } from "@react-three/fiber";
 import TWEEN from '@tweenjs/tween.js'
-import Moon from "./Moon";
 import * as THREE from 'three';
-const au = 149.6 * 10**6 * 1000;
-const scale = 5/au;
 
 function Planet(prop){
     const cameraRef = useRef();
-    //const earthMoonGltf = useLoader(GLTFLoader, '/solar_system/earth_moon/scene.gltf');
     let [clicked, setClicked] = useState(false);
     const [q,w,e] = prop.coordinates
     const clockRef = useRef(new THREE.Clock())
@@ -32,20 +26,8 @@ function Planet(prop){
                 .start()
             state.camera.lookAt(x,y,z);
             state.camera.updateProjectionMatrix();
-           
-
         }
     });
-
-    if(prop.name == "earth"){
-        return(
-            <mesh>
-                <mesh position={prop.coordinates} ref = {cameraRef}onClick={() => setClicked(!clicked) } >
-                    <primitive  object={prop.gltf.scene} scale = {prop.scale} children-0-castShadow />
-                </mesh>
-            </mesh>
-        )
-    }else{
     return(
             <mesh>
                 <mesh position={prop.coordinates} ref = {cameraRef} onClick={() => setClicked(!clicked) }>
@@ -54,5 +36,4 @@ function Planet(prop){
             </mesh>
         )
     }
-}
 export default Planet;

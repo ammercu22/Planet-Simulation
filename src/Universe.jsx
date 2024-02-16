@@ -1,6 +1,6 @@
 import { Canvas} from "@react-three/fiber";
 import Sun from "./Sun";
-import { Stats, OrbitControls, Text} from "@react-three/drei";
+import {OrbitControls} from "@react-three/drei";
 
 export default function Universe(){
     return(
@@ -14,10 +14,3 @@ export default function Universe(){
         </div>
     )
 }
-
-//            <div style = {{width: "400px", border: "1px", borderStyle: "solid"}}>Click a planet to zoom in on planet. Click the planet again to use orbital controls again.</div>
-
-
-//                <Text position = {[0,20,0]}scale = {[10,10,10]} color="white" anchorX = "center" anchorY = "middle">
-//Solar System
-//</Text>
