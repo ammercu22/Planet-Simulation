@@ -1,6 +1,7 @@
 import Universe from "./Universe";
-import {useState} from 'react';
+import { useState} from 'react';
 import './assets/style.css'
+
 function App() {
     const [componentState, setComponentState] = useState(false)
 
@@ -9,7 +10,7 @@ function App() {
         <div>
           <h1>3D Planet Simulation</h1>
           <div className="instructions">
-            <p>Click a planet to zoom in on planet. Click the planet again to use orbital controls again. Planets will take a couple of seconds to load.</p>
+            <p>Click and drag mouse to pan around solar system. Click a planet to zoom in on planet. Click the planet again to use orbital controls again. Planets will take a couple of seconds to load.</p>
             <button  className="button" role="button" onClick={()=>{setComponentState(true)}}>Ok</button>
           </div>
           <div className="credits">
@@ -23,7 +24,7 @@ function App() {
 
     return (
       <>
-        {componentState? <Universe/>: frontPage()}
+        {componentState?<Universe/>: frontPage()}
       </>
   );
 }
