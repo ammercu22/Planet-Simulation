@@ -4,4 +4,4 @@ A web application buiilt using React.js and React Three Fiber that displays a 3D
 
 #Screenshots
 <img src="./src/assets/space.gif"/>
-<img src="./src/assets/planets_screenshot.png>
+<img src="./src/assets/planets_screenshot.png"/>
