@@ -286,22 +286,22 @@
   ],
   "images": [
     {
-      "uri": "textures/Material_50_baseColor.jpeg"
+      "uri": "textures/compressed_Material_50_baseColor.jpg"
     },
     {
-      "uri": "textures/Material_50_metallicRoughness.png"
+      "uri": "textures/compressed_Material_50_metallicRoughness.png"
     },
     {
-      "uri": "textures/Material_50_emissive.jpeg"
+      "uri": "textures/compressed_Material_50_emissive.jpg"
     },
     {
-      "uri": "textures/Material_50_normal.png"
+      "uri": "textures/compressed_Material_50_normal.png"
     },
     {
-      "uri": "textures/Material_62_baseColor.png"
+      "uri": "textures/compressed_Material_62_baseColor.png"
     },
     {
-      "uri": "textures/Material_62_emissive.jpeg"
+      "uri": "textures/compressed_Material_62_emissive.jpg"
     }
   ],
   "materials": [

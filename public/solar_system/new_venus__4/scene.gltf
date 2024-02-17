@@ -230,13 +230,13 @@
   ],
   "images": [
     {
-      "uri": "textures/Material.001_baseColor.jpeg"
+      "uri": "textures/compressed_Material.001_baseColor.jpg"
     },
     {
       "uri": "textures/Material.001_normal.png"
     },
     {
-      "uri": "textures/Material_baseColor.jpeg"
+      "uri": "textures/compressed_Material_baseColor.jpg"
     }
   ],
   "materials": [

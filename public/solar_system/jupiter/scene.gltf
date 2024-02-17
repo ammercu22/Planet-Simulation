@@ -178,10 +178,10 @@
   ],
   "images": [
     {
-      "uri": "textures/Planeta_baseColor.png"
+      "uri": "textures/compressed_Planeta_baseColor.png"
     },
     {
-      "uri": "textures/Planeta_normal.png"
+      "uri": "textures/compressed_Planeta_normal.png"
     }
   ],
   "materials": [

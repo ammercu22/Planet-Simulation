@@ -644,13 +644,13 @@
   ],
   "images": [
     {
-      "uri": "textures/Material_63_baseColor.png"
+      "uri": "textures/compressed_Material_63_baseColor.png"
     },
     {
-      "uri": "textures/Material_50_baseColor.jpeg"
+      "uri": "textures/compressed_Material_50_baseColor.jpg"
     },
     {
-      "uri": "textures/Material_62_baseColor.png"
+      "uri": "textures/compressed_Material_62_baseColor.png"
     }
   ],
   "materials": [
