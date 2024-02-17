@@ -286,19 +286,19 @@
   ],
   "images": [
     {
-      "uri": "textures/Planeta_baseColor.jpeg"
+      "uri": "textures/compressed_Planeta_baseColor.jpg"
     },
     {
-      "uri": "textures/Planeta_metallicRoughness.png"
+      "uri": "textures/compressed_Planeta_metallicRoughness.png"
     },
     {
-      "uri": "textures/Atmosfera_baseColor.png"
+      "uri": "textures/compressed_Atmosfera_baseColor.png"
     },
     {
-      "uri": "textures/Atmosfera_metallicRoughness.png"
+      "uri": "textures/compressed_Atmosfera_metallicRoughness.png"
     },
     {
-      "uri": "textures/Atmosfera_normal.png"
+      "uri": "textures/compressed_Atmosfera_normal.png"
     }
   ],
   "materials": [
